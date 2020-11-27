@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Upload CSV file for LSPL Predictions (Currently Not working)</h2>
+<form>
+  <input type="file" id="data" name="data">
+  <input type="submit" value="Upload">
+</form>
+<h2>Fill out values for LSPL Prediction</h2>
+
+<form action="https://us-central1-valid-reflector-296301.cloudfunctions.net/lspl" method='GET'>
+  <label for="hr">Heart Rate:</label><br>
+  <input type="number" id="hr" name="hr" ><br>
+  <label for="rr">Respiratory Rate:</label><br>
+  <input type="number" id="rr" name="rr"><br>
+  <label for="t">Temperature:</label><br>
+  <input type="number" id="t" name="t"><br>
+  <label for="bp">Systolic Blood Pressure:</label><br>
+  <input type="number" id="bp" name="bp"><br>
+  <label for="rs">Risk Score:</label><br>
+  <input type="number" id="rs" name="rs"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Clicking the Submit Button will run a test function.</p>
+
+</body>
+</html>
